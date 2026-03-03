@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-bud-lightBg text-bud-darkBg antialiased;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+html.dark body {
+  @apply bg-bud-darkBg text-bud-lightBg;
+}
